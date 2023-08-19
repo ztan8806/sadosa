@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # 更新、安装工具
-sudo yum -y install wget
-sudo yum -y install gcc
+sudo yum -y update
+sudo yum --fix-broken install
+sudo yum -y install gcc automake autoconf libtool make wget
 
 # 下载 libsodium
 wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable.tar.gz
