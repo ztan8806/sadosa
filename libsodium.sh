@@ -2,7 +2,6 @@
 
 # 更新、安裝工具
 sudo yum -y update
-sudo yum --fix-broken install
 sudo yum -y install gcc automake autoconf libtool make wget ca-certificates
 
 # 下載 libsodium
