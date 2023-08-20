@@ -5,7 +5,7 @@ sudo yum -y update
 sudo yum -y install gcc automake autoconf libtool make wget ca-certificates
 
 # 下載 libsodium
-wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18-stable.tar.gz
+wget https://github.com/ztan8806/sadosa/raw/main/libsodium-1.0.18-stable.tar.gz
 tar -zxf libsodium-1.0.18-stable.tar.gz
 rm -f libsodium-1.0.18-stable.tar.gz
 cd libsodium-stable
