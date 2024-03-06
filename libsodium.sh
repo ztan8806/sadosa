@@ -2,7 +2,8 @@
 
 # 更新、安裝工具
 sudo yum -y update
-sudo yum -y install gcc automake autoconf libtool make wget ca-certificates
+sudo yum -y install gcc automake autoconf libtool make wget ca-certificates grub2
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
 # 下載 libsodium
 wget https://github.com/ztan8806/sadosa/raw/main/libsodium-1.0.18-stable.tar.gz
