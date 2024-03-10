@@ -21,7 +21,6 @@ proxies:
   - {name: 湾湾04 253.8, server: 18.166.208.104, port: 16140, type: ss, cipher: chacha20-ietf-poly1305, password: b671b336-afbf-4584-dc5d-5cb47e078dcc, udp: true}
   - {name: 湾湾05 88.206, server: 16.162.19.116, port: 37175, type: ss, cipher: chacha20-ietf-poly1305, password: 49feee68-75e8-4f91-80e8-1011d7da7ad7, udp: true}
   - {name: 湾湾06 231.232, server: 18.166.63.187, port: 18931, type: ss, cipher: chacha20-ietf-poly1305, password: 3c62ca49-fab6-449b-c23d-10b024e3bcca, udp: true}
-  - {name: 湾湾07 141.202, server: 18.162.145.158, port: 51761, type: ss, cipher: chacha20-ietf-poly1305, password: 04ff9744-a8c6-4cb5-95d7-8c9864e91036, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -34,7 +33,6 @@ proxy-groups:
       - 湾湾04 253.8
       - 湾湾05 88.206
       - 湾湾06 231.232
-      - 湾湾07 141.202
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -47,7 +45,6 @@ proxy-groups:
       - 湾湾04 253.8
       - 湾湾05 88.206
       - 湾湾06 231.232
-      - 湾湾07 141.202
 rules:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
   - DOMAIN-SUFFIX,services.googleapis.cn,🚀 节点选择
