@@ -18,7 +18,7 @@ proxies:
   - {name: 湾湾01 平台勿用, server: 18.162.145.158, port: 31861, type: ssr, cipher: chacha20-ietf, password: 777c8faa-bd77-4ee2-d66e-1ff10ba6c282, protocol: auth_sha1_v4, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
   - {name: 湾湾02 平台勿用, server: 43.198.101.187, port: 46221, type: ss, cipher: chacha20-ietf-poly1305, password: 04ff9744-a8c6-4cb5-95d7-8c9864e91036, udp: true}
   - {name: 湾湾03 平台勿用, server: 18.163.46.104, port: 24446, type: ssr, cipher: chacha20-ietf, password: 59bf32ad-fbf2-433d-f153-150320ffe805, protocol: auth_sha1_v4, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 湾湾04 148.218, server: 18.166.208.104, port: 56924, type: ss, cipher: chacha20-ietf-poly1305, password: bce82ee2-622c-41bb-b4fe-3d513e8f008d, udp: true}
+  - {name: 湾湾04 231.245, server: 18.166.208.104, port: 56924, type: ss, cipher: chacha20-ietf-poly1305, password: bce82ee2-622c-41bb-b4fe-3d513e8f008d, udp: true}
   - {name: 湾湾05 231.187, server: 16.162.19.116, port: 47942, type: ss, cipher: chacha20-ietf-poly1305, password: ff5d5961-8cde-4251-e4f8-969f8ca2ff19, udp: true}
   - {name: 湾湾06 88.206, server: 18.166.63.187, port: 18931, type: ss, cipher: chacha20-ietf-poly1305, password: 49feee68-75e8-4f91-80e8-1011d7da7ad7, udp: true}
   - {name: 湾湾07 231.232, server: 18.162.145.158, port: 51761, type: ss, cipher: chacha20-ietf-poly1305, password: 3c62ca49-fab6-449b-c23d-10b024e3bcca, udp: true}
@@ -31,7 +31,7 @@ proxy-groups:
       - 湾湾01 平台勿用
       - 湾湾02 平台勿用
       - 湾湾03 平台勿用
-      - 湾湾04 148.218
+      - 湾湾04 231.245
       - 湾湾05 231.187
       - 湾湾06 88.206
       - 湾湾07 231.232
@@ -44,7 +44,7 @@ proxy-groups:
       - 湾湾01 平台勿用
       - 湾湾02 平台勿用
       - 湾湾03 平台勿用
-      - 湾湾04 148.218
+      - 湾湾04 231.245
       - 湾湾05 231.187
       - 湾湾06 88.206
       - 湾湾07 231.232
