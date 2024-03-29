@@ -15,39 +15,33 @@ dns:
   fallback: [tls://1.0.0.1:853, https://cloudflare-dns.com/dns-query, https://dns.google/dns-query]
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
 proxies:
-  - {name: 湾湾01 平台勿用, server: 18.162.145.158, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 70446aef-8c59-48c8-f65a-611ae616bfb5, udp: true}
-  - {name: 湾湾02 平台勿用, server: 43.198.101.187, port: 46221, type: ss, cipher: chacha20-ietf-poly1305, password: 04ff9744-a8c6-4cb5-95d7-8c9864e91036, udp: true}
-  - {name: 湾湾03 206.241, server: 18.163.46.104, port: 39893, type: ss, cipher: chacha20-ietf-poly1305, password: 3f61d2f2-3fe8-4c95-ea38-ce3e8fa618e3, udp: true}
-  - {name: 湾湾04 231.72, server: 18.166.208.104, port: 25009, type: ss, cipher: chacha20-ietf-poly1305, password: ecbed276-94f2-4dc2-af65-3305f00e9855, udp: true}
-  - {name: 湾湾05 231.35, server: 16.162.19.116, port: 59252, type: ss, cipher: chacha20-ietf-poly1305, password: 1658d9e2-9b94-46de-bc25-9ec147a117cc, udp: true}
-  - {name: 湾湾06 88.206, server: 18.166.63.187, port: 18931, type: ss, cipher: chacha20-ietf-poly1305, password: 49feee68-75e8-4f91-80e8-1011d7da7ad7, udp: true}
-  - {name: 湾湾07 231.232, server: 18.162.145.158, port: 51761, type: ss, cipher: chacha20-ietf-poly1305, password: 3c62ca49-fab6-449b-c23d-10b024e3bcca, udp: true}
+  - {name: 湾湾01 浮动IP, server: 18.162.145.158, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 70446aef-8c59-48c8-f65a-611ae616bfb5, udp: true}
+  - {name: 湾湾02 88.237, server: 43.198.101.187, port: 10125, type: ss, cipher: chacha20-ietf-poly1305, password: cb974c8d-b918-4f5a-afc2-3c8ed09767a4, udp: true}
+  - {name: 湾湾03 88.236, server: 18.163.46.104, port: 51766, type: ss, cipher: chacha20-ietf-poly1305, password: 3f355007-5a98-435b-de76-f97a233e6797, udp: true}
+  - {name: 湾湾04 88.248, server: 18.166.208.104, port: 41064, type: ss, cipher: chacha20-ietf-poly1305, password: cd4a0ba6-d339-49e7-cb60-ab66fb0fce8b, udp: true}
+  - {name: 湾湾05 88.243, server: 16.162.19.116, port: 48849, type: ss, cipher: chacha20-ietf-poly1305, password: 5b77670d-c958-4bab-e25a-5a9d17b48788, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 湾湾01 平台勿用
-      - 湾湾02 平台勿用
-      - 湾湾03 206.241
-      - 湾湾04 231.72
-      - 湾湾05 231.35
-      - 湾湾06 88.206
-      - 湾湾07 231.232
+      - 湾湾01 浮动IP
+      - 湾湾02 88.237
+      - 湾湾03 88.236
+      - 湾湾04 88.248
+      - 湾湾05 88.243
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 湾湾01 平台勿用
-      - 湾湾02 平台勿用
-      - 湾湾03 206.241
-      - 湾湾04 231.72
-      - 湾湾05 231.35
-      - 湾湾06 88.206
-      - 湾湾07 231.232
+      - 湾湾01 浮动IP
+      - 湾湾02 88.237
+      - 湾湾03 88.236
+      - 湾湾04 88.248
+      - 湾湾05 88.243
 rules:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
   - DOMAIN-SUFFIX,services.googleapis.cn,🚀 节点选择
