@@ -16,10 +16,10 @@ dns:
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
 proxies:
   - {name: 湾湾01 浮动IP, server: 18.162.145.158, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 70446aef-8c59-48c8-f65a-611ae616bfb5, udp: true}
-  - {name: 湾湾02 88.237, server: 43.198.101.187, port: 10125, type: ss, cipher: chacha20-ietf-poly1305, password: cb974c8d-b918-4f5a-afc2-3c8ed09767a4, udp: true}
-  - {name: 湾湾03 88.236, server: 18.163.46.104, port: 51766, type: ss, cipher: chacha20-ietf-poly1305, password: 3f355007-5a98-435b-de76-f97a233e6797, udp: true}
-  - {name: 湾湾04 148.220, server: 18.166.208.104, port: 50643, type: ss, cipher: chacha20-ietf-poly1305, password: f693b3b4-b5d2-4f85-b315-e14f2512804e, udp: true}
-  - {name: 湾湾05 231.232, server: 16.162.19.116, port: 18502, type: ss, cipher: chacha20-ietf-poly1305, password: ff35ac30-c91b-4776-fe27-f0733fc4c49a, udp: true}
+  - {name: 湾湾02 15.7, server: 43.198.101.187, port: 21900, type: ss, cipher: chacha20-ietf-poly1305, password: 85417184-7a85-4259-feee-7b2131f54c35, udp: true}
+  - {name: 湾湾03 88.232, server: 18.163.46.104, port: 47821, type: ss, cipher: chacha20-ietf-poly1305, password: 44995312-8d19-480b-9d3d-be902173a648, udp: true}
+  - {name: 湾湾04 148.189, server: 18.166.208.104, port: 33963, type: ss, cipher: chacha20-ietf-poly1305, password: 0ec3c8e6-3991-4a8a-fe44-60ba3c7c4e3b, udp: true}
+  - {name: 湾湾05 148.187, server: 16.162.19.116, port: 54605, type: ss, cipher: chacha20-ietf-poly1305, password: d6222ef1-0141-448a-d9b9-e1d45fb3feaf, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,10 +27,10 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 湾湾01 浮动IP
-      - 湾湾02 88.237
-      - 湾湾03 88.236
-      - 湾湾04 148.220
-      - 湾湾05 231.232
+      - 湾湾02 15.7
+      - 湾湾03 88.232
+      - 湾湾04 148.189
+      - 湾湾05 148.187
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -38,10 +38,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 湾湾01 浮动IP
-      - 湾湾02 88.237
-      - 湾湾03 88.236
-      - 湾湾04 148.220
-      - 湾湾05 231.232
+      - 湾湾02 15.7
+      - 湾湾03 88.232
+      - 湾湾04 148.189
+      - 湾湾05 148.187
 rules:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
   - DOMAIN-SUFFIX,services.googleapis.cn,🚀 节点选择
