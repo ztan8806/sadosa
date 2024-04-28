@@ -4427,7 +4427,7 @@ EOF
                 echo ""
                 echo "时区切换"
                 echo "亚洲------------------------"
-                echo "1. 中国上海时间              2. 中国香港时间"
+                echo "1. 台湾台北时间              2. 中国香港时间"
                 echo "3. 日本东京时间              4. 韩国首尔时间"
                 echo "5. 新加坡时间                6. 印度加尔各答时间"
                 echo "7. 阿联酋迪拜时间            8. 澳大利亚悉尼时间"
@@ -4445,7 +4445,7 @@ EOF
                 read -p "请输入你的选择: " sub_choice
 
                 case $sub_choice in
-                    1) timedatectl set-timezone Asia/Shanghai ;;
+                    1) timedatectl set-timezone Asia/Taipei ;;
                     2) timedatectl set-timezone Asia/Hong_Kong ;;
                     3) timedatectl set-timezone Asia/Tokyo ;;
                     4) timedatectl set-timezone Asia/Seoul ;;
